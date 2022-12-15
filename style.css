@@ -1,0 +1,192 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-family: 'Inter', sans-serif;
+    list-style: none;
+}
+
+body{
+    margin: 100px;
+    margin-top: 30px;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px;
+    margin-bottom: 40px;
+}
+
+.W{
+    margin-left: 10px;
+    font-family: 'Abril Fatface', cursive;
+    font-weight: bolder;
+}
+
+.font-size{
+    font-size: 40px;
+}
+
+ul{
+    display: flex;
+}
+
+li{
+    margin: 20px;
+}
+
+.left{
+    max-width: 800px;
+}
+
+.WEB3{
+    max-width: 750px;
+}
+
+.div1{
+    display: flex;
+}
+
+.box{
+    background-color: #00011A;
+    height: 500px;
+}
+
+.white{
+    color: white;
+}
+
+.new{
+    color: #E0A963;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 15px;
+}
+
+.margin{
+    margin: 15px;
+}
+
+.border{
+    padding-bottom: 40px;
+    border-bottom: solid white 1px;
+}
+
+.future{
+    display: flex;
+    margin-top: 10px;
+}
+
+.We{
+    display: flex;
+    flex-direction: column;
+    margin-right: 50px;
+    margin-left: 100px;
+}
+
+.The{
+    width: 900px;
+    max-height: 175px;
+    font-size: 50px;
+}
+
+.button{
+    background: #F45D54;
+    padding: 20px;
+    position: absolute;
+    bottom: 0px;
+    margin-bottom: 10px;
+    color: white;
+    width: 150px;
+    text-align: center;
+}
+
+.footer{
+    margin-top: 50px;
+    display: flex;
+}
+
+h3{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.opac{
+    opacity: 50%;
+}
+
+.attribution{
+    margin-top: 50px;
+}
+
+.control{
+    max-width: 125px;
+    max-height: 125px;
+}
+
+.keyboard{
+    max-width: 125px;
+    max-height: 125px;
+}
+
+.retroPC{
+    max-width: 125px;
+    max-height: 125px;
+}
+
+.textFooter{
+    margin-left: 10px;
+}
+
+.size{
+    font-size: 15px;
+}
+
+.gaming{
+    width: 600px;
+    margin-left: 30px;
+}
+
+.keys{
+    width: 600px;
+    margin-right: 20px;
+}
+
+.PC{
+    width: 600px;
+    margin-right: 60px;
+}
+
+.boxFoooter{
+    display: flex;
+}
+
+.navLink{
+    color: #000000;
+}
+
+.footerLink{
+    color: #000000;
+}
+
+.boxLink{
+    color: white;
+}
+
+.button:hover{
+    background-color: #000000;
+}
+
+.boxLink:hover{
+    color:#E0A963
+}
+
+.navLink:hover{
+    color: hsl(5, 85%, 63%);
+}
+
+.footerLink:hover{
+    color: hsl(5, 85%, 63%);
+}
