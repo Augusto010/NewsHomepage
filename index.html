@@ -3,7 +3,6 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Inter:wght@400;700;800&display=swap" rel="stylesheet">  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
@@ -21,21 +20,29 @@
   <header>
     <h1 class="W font-size">w.</h1>
     <nav>
-      <ul>
+      <ul class="links">
         <li><a href="#" class="navLink">Home</a></li>
         <li><a href="#" class="navLink">New</a></li>
         <li><a href="#" class="navLink">Popular</a></li>
         <li><a href="#" class="navLink">Trending</a></li>
         <li><a href="#" class="navLink">Categories</a></li>
       </ul>
+      <ul class="points">
+        <p>_<br>_<br>_</p>
+      </ul>
     </nav>
   </header>
   <main>
     <div class="div1">
       <section class="left">
-        <img src="/assets/images/image-web-3-desktop.jpg" class="WEB3">
+        <picture>
+          <source media="(max-width: 1050px)" srcset="/assets/images/image-web-3-mobile.jpg">
+          <img src="/assets/images/image-web-3-desktop.jpg" class="WEB3">
+        </picture>
       <div class="future">
-        <h1 class="font-size The">The Bright Future of Web 3.0?</h1>
+        <div class="font-size">
+          <h1 class="the">The Bright Future of Web 3.0?</h1>
+        </div>
         <div class="We">
           <p>
           We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people. 
@@ -62,7 +69,7 @@
 
     <section class="footer">
       <div class="boxFoooter PC">
-        <img src="/assets/images/image-retro-pcs.jpg" alt="retroPC" class="retroPC">
+        <img src="/assets/images/image-retro-pcs.jpg" alt="retroPC" class="retroPC footerSize">
         <div class="textFooter">
           <h1 class="opac">01</h1>
           <h3><a href="#" class="footerLink">Reviving Retro PCs</a></h3>
@@ -71,7 +78,7 @@
       </div>
 
       <div class="boxFoooter keys">
-        <img src="/assets/images/image-top-laptops.jpg" alt="keyboard" class="keyboard">
+        <img src="/assets/images/image-top-laptops.jpg" alt="keyboard" class="keyboard footerSize">
         <div class="textFooter">
           <h1 class="opac">02</h1>
           <h3><a href="#" class="footerLink">Top 10 Laptops of 2022</a></h3>
@@ -80,7 +87,7 @@
       </div>
 
       <div class="boxFoooter gaming">
-        <img src="/assets/images/image-gaming-growth.jpg" alt="control" class="control">
+        <img src="/assets/images/image-gaming-growth.jpg" alt="control" class="control footerSize">
         <div class="textFooter">
           <h1 class="opac">03</h1>
           <h3><a href="#" class="footerLink">The Growth of Gaming</a></h3>
@@ -88,7 +95,7 @@
         </div>
       </div>
     </section>
-  <main>
+  </main>
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Nashor</a>.

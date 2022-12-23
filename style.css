@@ -7,8 +7,8 @@
 }
 
 body{
-    margin: 100px;
-    margin-top: 30px;
+    margin: auto;
+    max-width: 1125px;
 }
 
 header{
@@ -17,6 +17,10 @@ header{
     align-items: center;
     margin: 20px;
     margin-bottom: 40px;
+}
+
+img{
+    width: 100%;
 }
 
 .W{
@@ -38,11 +42,13 @@ li{
 }
 
 .left{
-    max-width: 800px;
+    max-width: 730px;
+    min-width: 100px;
+    margin-right: 50px;
 }
 
 .WEB3{
-    max-width: 750px;
+    max-width: 800px;
 }
 
 .div1{
@@ -51,7 +57,7 @@ li{
 
 .box{
     background-color: #00011A;
-    height: 500px;
+    height:auto;
 }
 
 .white{
@@ -76,28 +82,24 @@ li{
 
 .future{
     display: flex;
-    margin-top: 10px;
+    margin-top: 20px;
 }
 
 .We{
     display: flex;
     flex-direction: column;
-    margin-right: 50px;
-    margin-left: 100px;
+    max-width: 750px;
 }
 
-.The{
-    width: 900px;
-    max-height: 175px;
-    font-size: 50px;
+.the{
+    max-height: 210px;
+    width: 390px;
 }
 
 .button{
     background: #F45D54;
     padding: 20px;
-    position: absolute;
-    bottom: 0px;
-    margin-bottom: 10px;
+    margin-top: 35px;
     color: white;
     width: 150px;
     text-align: center;
@@ -122,18 +124,18 @@ h3{
 }
 
 .control{
-    max-width: 125px;
-    max-height: 125px;
+    width: 125px;
+    height: 125px;
 }
 
 .keyboard{
-    max-width: 125px;
-    max-height: 125px;
+    width: 125px;
+    height: 125px;
 }
 
 .retroPC{
-    max-width: 125px;
-    max-height: 125px;
+    width: 125px;
+    height: 125px;
 }
 
 .textFooter{
@@ -147,6 +149,7 @@ h3{
 .gaming{
     width: 600px;
     margin-left: 30px;
+    margin-right: 0px;
 }
 
 .keys{
@@ -189,4 +192,64 @@ h3{
 
 .footerLink:hover{
     color: hsl(5, 85%, 63%);
+}
+
+.points{
+    display: none;
+}
+
+@media (max-width: 1130px) and (min-width: 920px){
+    body{
+        margin: 50px;
+    }
+}
+
+@media (max-width: 920px){
+    body{
+        margin: 50px
+    }
+    .links{
+        display: none;
+    }
+    .points{
+        display: block;
+    }
+    .points:hover{
+        cursor: pointer;
+    }
+    .footer{
+        display: flex;
+        flex-direction: column;
+    }
+    .boxFoooter{
+        margin-bottom: 20px;
+        margin-left: 0px;
+        margin-right: 0px;
+        max-width: 340px;
+    }
+    .div1{
+        display: flex;
+        flex-direction: column;
+    }
+    .left{
+        margin: 0px 0px 10px 0px;
+    }
+    .future{
+        display: flex;
+        flex-direction: column;
+    }
+    .footerSize{
+        margin-right: 0px;
+    }
+    .boxFoooter{
+        margin-right: 50px;
+        max-width: 300px;
+    }
+    .the{
+        width: 275px;
+        margin-bottom: 100px;
+    }
+    .We{
+        margin:10px 0px 20px 0px;
+    }
 }
