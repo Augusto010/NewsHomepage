@@ -29,6 +29,13 @@ img{
     font-weight: bolder;
 }
 
+#btnMenu{
+    display: none;
+}
+#closeMenu{
+    display: none;
+}
+
 .font-size{
     font-size: 40px;
 }
@@ -114,26 +121,11 @@ h3{
     margin-top: 10px;
     margin-bottom: 10px;
 }
-
-.opac{
-    opacity: 50%;
-}
-
 .attribution{
     margin-top: 50px;
 }
 
-.control{
-    width: 125px;
-    height: 125px;
-}
-
-.keyboard{
-    width: 125px;
-    height: 125px;
-}
-
-.retroPC{
+.imagesSize{
     width: 125px;
     height: 125px;
 }
@@ -146,20 +138,15 @@ h3{
     font-size: 15px;
 }
 
-.gaming{
-    width: 600px;
-    margin-left: 30px;
-    margin-right: 0px;
-}
-
-.keys{
+.divSizes{
     width: 600px;
     margin-right: 20px;
 }
 
-.PC{
+.gaming{
     width: 600px;
-    margin-right: 60px;
+    margin-left: 30px;
+    margin-right: 0px;
 }
 
 .boxFoooter{
@@ -206,11 +193,39 @@ h3{
 
 @media (max-width: 920px){
     body{
-        margin: 50px
+        margin: 20px
     }
-    .links{
-        display: none;
+    #btnMenu{
+        display: flex;
+        border: none;
+        background: none;
+        font-size: 1rem;
+        padding: .5rem 1rem;
+        cursor: pointer;
     }
+    #closeMenu:hover{
+        cursor: pointer;
+        color: #E0A963;
+    }
+    #closeMenu{
+        display:flex;
+        justify-content: end;
+        font-size: 50px;
+    }
+    .menu{
+        display: block;
+        position: absolute;
+        height: 100vh;
+        background-color: white;
+        z-index: 100;
+        top: 0px;
+        right: 0px;
+        width: 0px;
+        transition: .6s;
+        visibility: hidden;
+        overflow-x: hidden;
+    }
+
     .points{
         display: block;
     }
@@ -247,9 +262,34 @@ h3{
     }
     .the{
         width: 275px;
-        margin-bottom: 100px;
+        margin-bottom: 150px;
     }
     .We{
         margin:10px 0px 20px 0px;
+    }
+    #nav.active #menu{
+        display: block;
+        width: 300px;
+        visibility: visible;
+        overflow-x: auto;
+    }
+    #main.opac{
+        background-color: gray;
+    }
+    #main.opac #backGround{
+        opacity: 0.5;
+    }
+    #hamburger{
+        color: black;
+        width: 20px;
+        border-top: 2px solid;
+    }
+    #hamburger::after, #hamburger::before{
+        content: '';
+        display: block;
+        width: 20px;
+        height: 2px;
+        background: currentColor;
+        margin-top: 5px;
     }
 }
